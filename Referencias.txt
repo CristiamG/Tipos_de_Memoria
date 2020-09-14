@@ -1,2 +1,2 @@
-4]https://www.ted.com/talks/kanawat_senanan_how_computer_memory_works/transcript?language=es
-1]http://www.fc.uaslp.mx/pca/tesis/2019Maestria/MorenoTorresJoséAdán-Maestria201987.pdf
+[1]https://www.ted.com/talks/kanawat_senanan_how_computer_memory_works/transcript?language=es
+[4]http://www.fc.uaslp.mx/pca/tesis/2019Maestria/MorenoTorresJoséAdán-Maestria201987.pdf
