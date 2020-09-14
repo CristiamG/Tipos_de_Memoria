@@ -1,0 +1,189 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Tipos de memoria en un computador}
+            
+        \vspace{0.5cm}
+        \LARGE
+        
+            
+        \vspace{1.5cm}
+            
+        \textbf{Cristiam Gutiérrez Jiménez}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Facultad de Ingeniería de Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\section{Introducción}
+Con este contenido aprenderemos los conceptos de la \textbf{memoria de un computador} de esta manera seremos más conscientes al momento de programar de los recursos físicos del sistema, y lograremos realizar un software más optimizado, y con mayor rendimiento. 
+
+\section{Concepto general de memoria} 
+
+La \textbf{memoria} en un computador es la que guarda información de forma permanente o temporal para la ejecución de datos, un computador tiene varios tipos de memoria, para la parte permanente tenemos el \textbf{disco duro}  o el \textbf{SSD} dependiendo el tipo de computador, para la parte temporal los computadores cuentan con una memoria \textbf{RAM(Random Access Memory)} o traducido al español, \textbf{(memoria de acceso aleatorio)}\cite{tedwebsite}.  pero para hacer esto un poco más claro y comprensible, la memoria en un computador es la que almacena datos informáticos de manera permanente o temporal, además de las instrucciones para el procesamiento de las mismos.
+
+\vspace{0.5cm}
+
+A continuación veremos los \textbf{tipos de memoria} y los describiremos uno a uno para que tengamos un conocimiento un poco más profundo del funcionamiento de la \textbf{memoria} y su importancia en el campo de la informática moderna. 
+
+\section{Tipos de memoria}
+
+Los computadores tienen varios tipos de memoria que forman una jerarquía, para clasificarlas, las de mayor jerarquía son las que están más cerca del procesador, las características más importantes para clasificar las memorias son el \textbf{tiempo de acceso, densidad de información, y su volatilidad.}\cite{Pablo}
+
+\vspace{0.5cm}
+
+\textbf{Tiempo de Acceso:} es el tiempo que se toma para recuperar la información.
+
+\vspace{0.5cm}
+
+\textbf{Densidad de información:} es el espacio por bit que ocupa la información.
+
+\vspace{0.5cm}
+
+\textbf{Volatilidad:} esta nos dice si la información se mantiene de forma permanente, si es solo temporal, las memorias volátiles, no mantienen la información cuando están sin alimentación eléctrica, en las memorias no volátiles, no importa si hay o no hay alimentación eléctrica, la información permanece de manera constante.\cite{Pablo}
+
+\subsection{Memoria RAM:} la memoria RAM es la que almacena datos e instrucciones de manera temporal, es una memoria volátil, pierde todos los datos cuando se apaga el computador, pero a cambio de esta desventaja, cuenta con una gran velocidad al transmitir información, en la RAM cargamos datos y archivos del sistema operativo, programas en ejecución y también video.\cite{Pablo}
+
+\subsection{Memoria SRAM:}
+La memoria SRAM presenta mayor rapidez tanto en escritura como en lectura de datos frente a la \textbf{DRAM},  ocupa más del 50\% del área en un procesador es una memoria \textbf{volátil}, pierde la información si se interrumpe la alimentación de energía eléctrica, es menos densa que la \textbf{DRAM} por esto no se usa con altos volúmenes de datos, pero tiene un tiempo de acceso mucho más reducido que \textbf{DRAM}\cite{semanticscholarwebsite}.
+
+\subsection{Memoria DRAM:}
+
+Actualmente es la memoria principal en los sistemas de hardware de los computadores, es una memoria \textbf{volátil}, almacena los bit en capacitores dentro de circuitos integrados,\cite{uaslpwebsite} tiene una estructura más simple que la \textbf{SRAM}, como los capacitores se van descargando poco a poco, deben ser recargados constantemente con la información, aunque no es tan rápida como la \textbf{SRAM}, es de una densidad de información mucho mayor.
+
+\subsection{Memoria VRAM:}
+
+si ponemos su definición en términos coloquiales, la \textbf{VRAM} es como la \textbf{RAM}, pero para funciones exclusivamente gráficas, mientras la memoria RAM mantiene los datos del sistema, o archivos de programa, la \textbf{VRAM} cumple su función manteniendo los mapas de BITS\cite{upvwebsite} que se muestran en la pantalla,iluminación y sombras, trabaja mano a mano con la \textbf{GPU}, de esta manera nuestro sistema trabaja más equilibradamente especialmente ahora que muchos equipos son orientados al mundo \textbf{gamer}.
+
+\subsection{Memoria ROM:}
+
+Son memorias \textbf{no volátiles}, su información permanece aunque el computador no  tenga suministro de corriente eléctrica, se utilizan para almacenar los datos del sistema de arranque,\cite{Pablo} algunas pueden ser borradas, normalmente las memorias \textbf{ROM} son cargadas de información desde su punto de fabricación.
+
+\subsection{Memoria Flash:}
+
+las encontramos en dispositivos como celulares dispositivos USB se caracteriza porque su lectura y escriturase puede realizar en múltiples posiciones, tiene una gran capacidad para el almacenamiento de datos.\cite{Claudia}
+
+\subsection{Optane:} es una memoria exclusiva de INTEL, tiene una latencia muy baja y una gran velocidad de lectura y escritura bajo un gran volumen de datos, lo que la convierte en un dispositivo ideal para la carga del sistema operativo o algunas aplicaciones, hasta el momento cuenta con capacidades de 16, 32, y 64 GB se conecta mediante un puerto PCI y soporta grandes cantidades de datos.\cite{uaslpwebsite}
+
+\section{Gestion de la memoria en el PC:}
+
+Supongamos que tú eres el procesador, trabajas en una oficina y tu objetivo es hacer informes. Trabajas en cientos de ellos, incluso varios están relacionados y necesitas constantemente cruzar datos de unos a otros.
+
+\vspace{0.5cm}
+
+La estructura de tu oficina es la siguiente: tienes un escritorio lleno de papeles en los cajones del escritorio más papeles y una estantería detrás tuyo con más papeles, y también tienes un cuarto de archivos con otros miles y miles de papeles. Lo que estás utilizando en este momento de forma más inmediata lo tienes en el escritorio, pero en el escritorio no te cabe demasiada cosa, para esto tienes los cajones bastante a mano. Cada cierto tiempo buscas informes en los cajones, pero no todos te caben, para eso utilizas la estantería y lo que no cabe en la estantería irá al cuarto de archivo. 
+
+\vspace{0.5cm}
+
+Para un humano sería una completa tortura este trabajo, esto lo realiza el procesador millones de veces por segundo. 
+
+\vspace{0.5cm}
+
+Seguramente has oído hablar que la memoria \textbf{RAM} es muchísimo más rápida que tu disco duro o \textbf{SSD}, y para que el procesador no se quede esperando que los datos carguen desde el disco se utiliza la \textbf{RAM}, que es una memoria intermedia.
+
+\vspace{0.5cm}
+
+Imaginemos que no hay ni mesa ni estantería ni nada; y tienes que ir a buscar los informes corriendo de una esquina a otra del cuarto de archivos, se perdería muchísimo tiempo buscando los archivos y trabajarías más bien poco en tus informes, la memoria \textbf{RAM} resuelve este problema, la estantería que tienes detrás la \textbf{RAM} es una memoria que hoy en día es capaz de proveer al procesador con varios gigabytes de datos por segundo.
+
+\vspace{0.5cm}
+
+\textbf{¿Por qué no utilizamos la RAM como disco duro?}
+
+\vspace{0.5cm}
+
+Sería una buena idea, pero lamentablemente esta memoria es \textbf{volátil}, en cuanto apagamos el ordenador todos los datos desaparecen, es como ver que en esta estantería que tú tienes y que usas en tu día a día cuando te vas a casa la tienes que vaciar y dejar todo en el cuarto de archivo, el \textbf{disco duro}.
+
+\vspace{0.5cm}
+
+Hablemos de esa estantería o de la memoria \textbf{RAM}, la memoria principal cercana al procesador le provee de todos los datos que necesita sin tener que ir al cuarto de archivo, que es muchísimo más lento, el verdadero nombre de la memoria principal del computador es \textbf{DRAM} o \textbf{(Memoria de Acceso Aleatorio Dinámico)}, se llama dinámica porque los datos se almacenan en una especie de pilas llamadas capacitores que tienden a perder la carga con el tiempo,\cite{uaslpwebsite} como esta carga justamente decae, es importante volver a escribir los datos cada cierto tiempo para evitar que los datos desaparezcan. La \textbf{DRAM} es una memoria rápida pero olvidadiza, mientras que el disco duro o los \textbf{SSD} son memorias que persisten aun cuando no tienen corriente que les alimente, esto se conoce como \textbf{No Volátil}, y aquí ya empiezan a ser evidentes nuestras carencias tecnológicas, necesitamos dos tipos de memoria en lugar de uno. 
+
+\vspace{0.5cm}
+
+Tenemos que mover los datos entre una y otra constantemente porque no tenemos una sola memoria que sea buena para todo, si tuvieramos una sola memoria que no fuera volátil, tuviera las capacidades de una unidad de almacenamiento, y la velocidad de una \textbf{RAM}. Desde luego no necesitaríamos estos dos pasos que no dejan de ser un empalme, un parche para que tu PC no se quede esperando encontrar los archivos, esta es la tecnología que tenemos.
+
+\vspace{0.5cm}
+
+conseguir una memoria que unifique ambas es uno de los retos de la informática hoy en día, y es algo que se está investigando actualmente por varias empresas y universidades.
+
+\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+
+La \textbf{RAM} es rápida pero no lo suficientemente rápida para que nuestro procesador pueda trabajar a máxima eficiencia, si sólo utilizamos la \textbf{RAM}, el procesador se quedaría en el limbo por ratos esperando que la RAM encuentre los archivos que busca, por eso existe otro nivel más de memoria. 
+
+\vspace{0.5cm}
+
+Resulta que en la evolución de los procesadores llegó un momento en el cual los procesadores eran tan rápidos que la \textbf{RAM} se le quedaba corta de velocidad, el procesador se quedaba cada cierto tiempo esperando que la \textbf{RAM} cargara datos, así que se introdujo un nuevo nivel de memoria, varios en realidad, resulta que existe un tipo de memoria más rápida que la \textbf{DRAM}, esta memoria es capaz de almacenar todos los datos de forma permanente y además es más rápida que la \textbf{RAM}, Se utiliza como paso intermedio entre la \textbf{RAM} y el procesador, es la famosa \textbf{memoria Caché}.
+
+\vspace{0.5cm}
+
+Estos módulos de memoria están dentro del procesador, existen varios niveles tres o incluso cuatro, podríamos considerar como que tu escritorio es el nivel 1 mientras que los distintos cajones del escritorio son los siguientes niveles.
+
+\vspace{0.5cm}
+
+Lo mencionado anteriormente nos lleva a la pregunta; ¿Por qué no se usa la \textbf{SRAM} para crear unidades que hagan el trabajo de los discos duros y de la \textbf{RAM} a la vez? 
+
+\vspace{0.5cm}
+
+En teoría sería muchísimo más rápido y no necesitaríamos \textbf{caché}, pero resulta que también tiene sus problemas, se habla mucho de que esta memoria es excesivamente cara y si se hiciera un disco duro con este tipo de memoria sería costosísimo, es verdad que sería algo más caro, pero tampoco es este exactamente el motivo, el problema es que la \textbf{SRAM} requiere 6 transistores por cada celda de memoria mientras que la DRAM sólo 1. 
+
+\vspace{0.5cm}
+
+Para almacenar un solo bit la \textbf{SRAM} requiere seis veces el número de transistores que la de \textbf{DRAM}, efectivamente esto lo hace más caro claro, pero el problema principal es el espacio físico, se necesita mucho más espacio por bit que en la \textbf{RAM}, por lo cual cuando más capacidad queremos tener en este tipo de memoria más grande necesitamos que sea su placa o \textbf{Main board}.
+
+\vspace{0.5cm}
+
+Las memorias caché se dividen en distintos niveles según su densidad, una placa más densa puede almacenar más datos en un determinado espacio respecto a otras menos densas, en otras palabras
+el chip donde está montada la memoria, en el caso que sea una memoria más densa, puede albergar más bits, mientras que una menos densa, menos bits en el mismo espacio, cuanto más rápida es la caché más componentes necesita por cada bit. Por eso las memorias más rápidas ocupan más sitio en la placa.
+
+\vspace{0.5cm}
+
+Cada nivel de caché es más grande y más denso que el anterior, pero también más lento, por esta razón cada memoria tiene sus problemas.
+
+\vspace{0.5cm}
+
+Esto sería el equivalente a decir: el caché nivel 1, es el escritorio, el escritorio tiene una capacidad de papeles limitada, si bien los papeles son muy accesibles en el escritorio, si quisiéramos hacer un escritorio mucho más grande, tendríamos el problema de que nos costaría trabajo llegar de una punta a otra del escritorio, como vemos acabamos antes teniendo un escritorio con cajones, o una estantería detrás con todos los documentos organizados. Si tuvieramos que poner todos los documentos que tenemos en la estantería en un escritorio, necesitaríamos un escritorio muy grande y sería muy poco eficiente. 
+
+\vspace{0.5cm}
+
+Esto es exactamente lo que pasa con la caché, si bien la caché de nivel 1 es muy rápida, si quisiéramos tener una \textbf{caché} de nivel 1 del tamaño de la \textbf{RAM} tendría tanto recorrido que sería lenta.
+
+\section{Conclusión}
+
+Con base a lo mencionado anteriormente, toda esta información e investigación nos lleva a ser más conscientes del uso de los recursos de memoria del pc, no solo al momento de programar en cualquier lenguaje, sino también para optimizar nuestros computadores, y ser más conscientes al momento de trabajar con nuestro pc, es claro que tener el procesador más potente no hará que nuestro pc lo sea, o la tarjeta de video más potente tampoco hará que nuestro pc sea el mejor en video, debemos conseguir el equilibrio para sacar el máximo provecho a nuestros componentes de hardware, y que esto se vea reflejado en el desempeño y rendimiento con el software, un punto de balance para no desperdiciar o por el contrario sobrecargar nuestro pc, si aplicamos estas cosas al momento de nuestros proyectos de programación, conseguiremos programas que aprovecharán al máximo los recursos en los dispositivo que corran, siendo beneficioso tanto para nosotros como para el usuario final.
+
+
+\vspace{4cm}
+
+
+
+
+
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
